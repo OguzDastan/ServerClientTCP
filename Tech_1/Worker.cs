@@ -18,12 +18,16 @@ namespace Tech_1
             using (StreamReader sr = new StreamReader(socket.GetStream()))
             using (StreamWriter sw = new StreamWriter(socket.GetStream()))
             {
+                string str2 = "En ny besked";
                 string str = "Den Besked jeg sender";
                 sw.WriteLine(str);
                 sw.WriteLine(str.Length);
+                sw.WriteLine(str2);
                 sw.Flush();
 
                 string strin = sr.ReadLine();
+                Console.WriteLine(strin);
+                strin = sr.ReadLine();
                 Console.WriteLine(strin);
                 strin = sr.ReadLine();
                 Console.WriteLine(strin);
