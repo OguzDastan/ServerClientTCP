@@ -30,10 +30,6 @@ namespace server
                 t.Start();
             }
         }
-        public void lol()
-        {
-
-        }
 
         public void DoClient()
         {
